@@ -18,6 +18,10 @@ pnpm-debug.log*
 # Testes
 coverage/
 
+# Claude Code (arquivos pessoais, não versionar)
+CLAUDE.local.md
+.claude/settings.local.json
+
 # Editores/SO
 .DS_Store
 .vscode/
