@@ -21,5 +21,24 @@ export default [
       ...tsPlugin.configs.recommended.rules,
     },
   },
+  {
+    // Regra de camadas (docs/architecture.md): domain/ é o núcleo e não depende
+    // de nenhuma outra camada. Não cobre import() dinâmico.
+    files: ["src/domain/**/*.ts"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              regex: "(^|/)(application|infrastructure|interface)(/|$)",
+              message:
+                "domain/ não pode importar application/, infrastructure/ nem interface/. Defina uma porta (interface) em domain/ e implemente-a fora.",
+            },
+          ],
+        },
+      ],
+    },
+  },
   prettierConfig,
 ];

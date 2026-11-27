@@ -11,6 +11,7 @@ Seguimos [Conventional Commits](https://www.conventionalcommits.org/pt-br/):
 Tipos comuns: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`.
 
 Exemplos:
+
 ```
 feat(auth): adiciona login via magic link
 fix(orders): corrige cálculo de frete para múltiplos itens
@@ -38,8 +39,6 @@ Record) em `docs/decisions/`.
 
 ## Checklist antes de abrir uma PR
 
-- [ ] `pnpm lint` sem erros
-- [ ] `pnpm test` passando
-- [ ] `pnpm build` completando sem erros
+- [ ] `pnpm check` passando (formatação, lint, typecheck, testes e build — o mesmo comando do CI)
 - [ ] ADR criado, se a mudança afeta arquitetura
 - [ ] Descrição da PR preenchida usando o template

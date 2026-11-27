@@ -6,28 +6,23 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9
+      # Versão do pnpm vem do campo packageManager do package.json.
+      - uses: pnpm/action-setup@v6
 
+      # Versão do Node vem do .nvmrc (mesma usada localmente).
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version-file: .nvmrc
           cache: pnpm
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Lint
-        run: pnpm lint
-
-      - name: Test
-        run: pnpm test
-
-      - name: Build
-        run: pnpm build
+      # Mesmo comando de verificação usado localmente.
+      - name: Check
+        run: pnpm check
