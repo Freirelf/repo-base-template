@@ -11,6 +11,7 @@ Seguimos [Conventional Commits](https://www.conventionalcommits.org/pt-br/):
 Tipos comuns: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`.
 
 Exemplos:
+
 ```
 feat(auth): adiciona login via magic link
 fix(orders): corrige cálculo de frete para múltiplos itens

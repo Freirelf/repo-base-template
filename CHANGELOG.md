@@ -8,4 +8,5 @@ e este projeto adere a [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ## [Unreleased]
 
 ### Added
+
 - Estrutura inicial do template (pastas, CI, documentação base).
