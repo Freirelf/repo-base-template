@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "exemplo-http": {
+      "type": "http",
+      "url": "${EXEMPLO_MCP_URL:-https://example.com/mcp}",
+      "headers": {
+        "Authorization": "Bearer ${EXEMPLO_MCP_TOKEN}"
+      }
+    },
+    "exemplo-stdio": {
+      "type": "stdio",
+      "command": "/caminho/para/servidor-mcp",
+      "args": ["--modo", "leitura"],
+      "env": {
+        "LOG_LEVEL": "${LOG_LEVEL:-info}"
+      }
+    }
+  }
+}
