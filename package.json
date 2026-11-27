@@ -6,7 +6,8 @@
   "description": "[PREENCHER: descrição curta do projeto]",
   "scripts": {
     "dev": "tsx watch src/index.ts",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
     "test": "vitest run",
     "lint": "eslint .",
     "format": "prettier --write ."
