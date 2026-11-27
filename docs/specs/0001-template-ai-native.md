@@ -1,6 +1,6 @@
 # 0001 — Template AI-native (etapas 1 e 2)
 
-- Status: em andamento (etapa 1 concluída; etapa 2 em implementação)
+- Status: em andamento (etapas 1 e 2 implementadas; falta conferir `/context all` numa sessão nova)
 - Escopo: este repositório (repo-base-template). Plugin e template Python têm specs próprias
   (ver final).
 
