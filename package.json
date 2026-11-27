@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "description": "[PREENCHER: descrição curta do projeto]",
+  "packageManager": "pnpm@12.3.4",
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc -p tsconfig.build.json",
