@@ -8,7 +8,5 @@
 
 ## Checklist
 
-- [ ] `pnpm lint` sem erros
-- [ ] `pnpm test` passando
-- [ ] `pnpm build` completando sem erros
+- [ ] `pnpm check` passando (formatação, lint, typecheck, testes e build — o mesmo comando do CI)
 - [ ] ADR criado em `docs/decisions/`, se esta mudança afeta arquitetura

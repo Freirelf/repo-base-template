@@ -39,8 +39,6 @@ Record) em `docs/decisions/`.
 
 ## Checklist antes de abrir uma PR
 
-- [ ] `pnpm lint` sem erros
-- [ ] `pnpm test` passando
-- [ ] `pnpm build` completando sem erros
+- [ ] `pnpm check` passando (formatação, lint, typecheck, testes e build — o mesmo comando do CI)
 - [ ] ADR criado, se a mudança afeta arquitetura
 - [ ] Descrição da PR preenchida usando o template
