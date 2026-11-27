@@ -16,6 +16,10 @@ interface  ──▶  application  ──▶  domain  ◀──  infrastructure
 - `domain/` não depende de nada externo — nem de frameworks, nem de bibliotecas de
   banco de dados, nem de SDKs de terceiros.
 
+A regra é imposta pelo ESLint (`no-restricted-imports` em [eslint.config.js](../eslint.config.js)):
+arquivos em `src/domain/` que importem de `application/`, `infrastructure/` ou `interface/`
+fazem o `pnpm lint` (e o `pnpm check`) falhar.
+
 ## Como isso funciona na prática
 
 1. **`domain/`** define as regras de negócio e as **interfaces (portas)** que descrevem o
